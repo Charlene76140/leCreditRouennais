@@ -92,29 +92,37 @@ textarea {
     margin: 0;
     padding: 0;
   }  
-  
-  /* .secondPlan{
-    height: 100%;
-    width: 100%;
-    position: relative;
-  }
 
   .layer{
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.794);
+    position: fixed;
     top: 0px;
     left: 0px;
-  } */
+    z-index:1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sizeRules{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+  }
+
 
   .bgColor{
-    background-color: #BBC7CE;
+    background-color: #829298;
   }
 
   .colorButton{
-    background-color:#BBC7CE;
+    background-color:#829298;
   }
 
 
@@ -126,8 +134,15 @@ textarea {
   .onlyComputer{
     display: none;
   }
+
+  /*----------main mobile----------*/
+  hr{
+    display: none;
+  }
+
+  /*----------Footer mobile----------*/
   .sizeIcone{
-    font-size: 40px;
+    font-size: 30px;
   }
 
 
@@ -136,8 +151,11 @@ textarea {
 
 
 
-  /*computer version */
+
+  /*--------------------------------computer version--------------------------------- */
   @media screen and (min-width : 768px){
+  
+    /*--------Header mobile--------*/
     .onlyMobile{
       display: none;
     }
@@ -145,11 +163,18 @@ textarea {
     .onlyComputer{
       display: block;
     }
-
-    .test{
-      justify-content: end;
+    /*----------main mobile----------*/
+    
+    hr{
+      display: block;
+      width: 20%;
     }
+
+
+    /*----------Footer mobile----------*/
   }
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
