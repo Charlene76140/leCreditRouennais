@@ -87,6 +87,69 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  /*----------------------------general rules----------------------------------- */
+  *{
+    margin: 0;
+    padding: 0;
+  }  
+  
+  /* .secondPlan{
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .layer{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  } */
+
+  .bgColor{
+    background-color: #BBC7CE;
+  }
+
+  .colorButton{
+    background-color:#BBC7CE;
+  }
+
+
+  /*------------------------------mobile version-----------------------------------*/
+  
+ 
+
+  /*----------Header mobile----------*/
+  .onlyComputer{
+    display: none;
+  }
+  .sizeIcone{
+    font-size: 40px;
+  }
+
+
+
+
+
+
+
+  /*computer version */
+  @media screen and (min-width : 768px){
+    .onlyMobile{
+      display: none;
+    }
+
+    .onlyComputer{
+      display: block;
+    }
+
+    .test{
+      justify-content: end;
+    }
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
