@@ -9,12 +9,13 @@ function articles(){
             if (httpRequest.status === 200) {
                 //variable get the response from server
                 let data = JSON.parse(httpRequest.responseText);
+                console.log(data);
                 //loop over themeArticle length of data (server response).
                 for(let i = 0; i < data.length; i++){
                     let section = document.querySelector('section');
                     section.innerHTML += '<div class="card text-center mt-5 sizeArticle"><div class="card-header">'+ data[i].id 
                     + '</div><div class="card-body"><h5 class="card-title">' + data[i].titre +'</h5><p class="card-text">'
-                    + data[i].contenu +'</p></div><a class="btn colorButton sizeButton" href="#">En savoir plus</a></div>';
+                    + data[i].contenu +'</p></div><a class="btn colorButton sizeButton mb-4" href="#">En savoir plus</a></div>';
                 }
             } 
             // If an error has occurred

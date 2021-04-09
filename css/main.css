@@ -97,10 +97,16 @@ textarea {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    font-family: 'Raleway', sans-serif;
     min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
   }
 
+  .bgColor, .colorButton{
+    background-color: #829298;
+  }
+
+
+  /*----------For Layer----------*/
   .layer{
     height: 100vh;
     width: 100%;
@@ -125,12 +131,9 @@ textarea {
   }
 
 
-  .bgColor, .colorButton{
-    background-color: #829298;
-  }
-
   /*------------------------------mobile version-----------------------------------*/
-  /*----------Header mobile----------*/
+
+  /*----------Header mobile---------*/
   .onlyComputer{
     display: none;
   }
@@ -143,7 +146,13 @@ textarea {
   section h2{
     margin: 2% 2%;
   }
-  /*----------Footer mobile----------*/
+
+  .sizeSection{
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+  }
+  /*---------Footer mobile----------*/
   .sizeIcone{
     font-size: 30px;
   }
@@ -176,7 +185,7 @@ textarea {
 
     /*----------main computer----------*/
     article{
-      font-size: 1.1em;
+      font-size: 0.9em;
     }
     
     hr{
@@ -193,12 +202,14 @@ textarea {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      
     }
 
     .sizeArticle{
-      width: 23%;
+      width: 40%;
       margin: 0 2% 0 2%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
 
     }
 
@@ -206,6 +217,9 @@ textarea {
       width: 35%;
       margin: auto;
     }
+
+
+    
 
     /*----------Footer computer----------*/
 
