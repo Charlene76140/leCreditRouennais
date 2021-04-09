@@ -94,7 +94,11 @@ textarea {
   }  
 
   body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
   }
 
   .layer{
@@ -183,6 +187,24 @@ textarea {
 
     section h2{
       margin: 2% 2%;
+    }
+
+    .section2{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+    }
+
+    .sizeArticle{
+      width: 23%;
+      margin: 0 2% 0 2%;
+
+    }
+
+    .sizeButton{
+      width: 35%;
+      margin: auto;
     }
 
     /*----------Footer computer----------*/
