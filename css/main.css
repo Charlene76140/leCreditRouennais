@@ -93,6 +93,10 @@ textarea {
     padding: 0;
   }  
 
+  body{
+    font-family: 'Raleway', sans-serif;
+  }
+
   .layer{
     height: 100vh;
     width: 100%;
@@ -117,19 +121,11 @@ textarea {
   }
 
 
-  .bgColor{
+  .bgColor, .colorButton{
     background-color: #829298;
   }
 
-  .colorButton{
-    background-color:#829298;
-  }
-
-
   /*------------------------------mobile version-----------------------------------*/
-  
- 
-
   /*----------Header mobile----------*/
   .onlyComputer{
     display: none;
@@ -140,11 +136,17 @@ textarea {
     display: none;
   }
 
+  section h2{
+    margin: 2% 2%;
+  }
   /*----------Footer mobile----------*/
   .sizeIcone{
     font-size: 30px;
   }
 
+  .sizeCopyRight{
+    font-size: 0.8em;
+  }
 
 
 
@@ -155,7 +157,7 @@ textarea {
   /*--------------------------------computer version--------------------------------- */
   @media screen and (min-width : 768px){
   
-    /*--------Header mobile--------*/
+    /*--------Header computer--------*/
     .onlyMobile{
       display: none;
     }
@@ -163,15 +165,35 @@ textarea {
     .onlyComputer{
       display: block;
     }
-    /*----------main mobile----------*/
+
+    nav{
+      font-size: 1.2em;
+    }
+
+    /*----------main computer----------*/
+    article{
+      font-size: 1.1em;
+    }
     
     hr{
       display: block;
-      width: 20%;
+      width: 50%;
+      margin: 5% 25% 5% 25%;
     }
 
+    section h2{
+      margin: 2% 2%;
+    }
 
-    /*----------Footer mobile----------*/
+    /*----------Footer computer----------*/
+
+    .sizeIcone{
+      font-size:50px;
+    }
+
+    footer p{
+      padding: 0.5px;
+    }
   }
 
 

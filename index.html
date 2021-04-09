@@ -17,6 +17,8 @@
   <!-- Place favicon.ico in the root directory -->
   <link rel="shortcut icon" href="favicon.ico"/>
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -71,49 +73,56 @@
     
 
     <main>
-      <section class="container-fluid">
+      <section class="container-fluid my-5">
         <h2>Vos comptes bancaires</h2>
-        <article class="container-fluid">
-          <div class="card text-center mt-4">
-            <div class="card-header">Compte courant</div>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">n°123456789</h6>
-              <p class="card-text">Solde : 1 482,50€</p>
-              <hr>
-              <p class="card-text onlyComputer">Dernière opération : 64€25 commande Amazon</p>
-              <hr>
-              <a class="btn btn-sm colorButton" href="#" role="button">Accedez au compte</a>
+        <div class="row">
+          <article class="container-fluid col-lg-3 me-lg-2 my-lg-5">
+            <div class="card text-center mt-4">
+              <div class="card-header py-lg-3 fs-4">Compte courant</div>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">n°123456789</h6>
+                <p class="card-text">Solde : <strong>1 482,50€</strong></p>
+                <hr>
+                <p class="card-text onlyComputer">Dernière opération : <br/> <strong>64€25</strong> - Amazon</p>
+                <hr>
+                <a class="btn colorButton" href="#" role="button">Accedez au compte</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        
 
-        <article class="container-fluid">
-          <div class="card text-center mt-4">
-            <div class="card-header">Compte épargne</div>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">n°987654321</h6>
-              <p class="card-text">Solde : 2 459,60€</p>
-              <p class="card-text onlyComputer">Dernière opération : 200€ virement compte courant</p>
-              <a class="btn btn-sm colorButton" href="#" role="button">Accedez au compte</a>
+          <article class="container-fluid col-lg-3 mx-lg-0 my-lg-5">
+            <div class="card text-center mt-4">
+              <div class="card-header py-lg-3 fs-4">Compte épargne</div>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">n°987654321</h6>
+                <p class="card-text">Solde : <strong>2 459,60€</strong></p>
+                <hr>
+                <p class="card-text onlyComputer">Dernière opération : <br/> <strong>200€</strong> - vir.compte courant</p>
+                <hr>
+                <a class="btn colorButton" href="#" role="button">Accedez au compte</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="container-fluid">
-          <div class="card text-center mt-4">
-            <div class="card-header">Compte épargne retraite</div>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">n°134679852</h6>
-              <p class="card-text">Solde : 12 500€</p>
-              <p class="card-text onlyComputer">Dernière opération : 50€ épargne programmé</p>
-              <a class="btn btn-sm colorButton" href="#" role="button">Accedez au compte</a>
+          <article class="container-fluid col-lg-3 ms-lg-2 my-lg-5">
+            <div class="card text-center mt-4">
+              <div class="card-header py-lg-3 fs-4">Compte retraite</div>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">n°134679852</h6>
+                <p class="card-text">Solde : <strong>12 500€</strong></p>
+                <hr>
+                <p class="card-text onlyComputer">Dernière opération : <br/> <strong>50€</strong> - épargne programmé</p>
+                <hr>
+                <a class="btn colorButton" href="#" role="button">Accedez au compte</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
       </section>
     </main>
 
-    <footer class="container-fluid bgColor mt-5">
+    <footer class="container-fluid bgColor mb-0">
       <div class="row">
         <p class="col-12 text-center sizeIcone"><i class="fab fa-twitter-square"></i>
         <i class="fab fa-facebook-square"></i>
@@ -124,6 +133,7 @@
         <p class="text-center">Mentions legales</p>
         <p class="text-center">Politiques de traitement des données</p>
         <p class="text-center">Sécurité</p>
+        <p class="text-center sizeCopyRight">Copyright © avril-2021 </p>
       </div>
     </footer>
     
