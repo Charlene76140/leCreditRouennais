@@ -26,8 +26,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
-  
+<body onload="statistiques()">
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bgColor">
       <div class="container-fluid">
@@ -37,7 +36,6 @@
         <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon btn-sm"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -65,11 +63,37 @@
     </nav>
   </header>
   
-
   <main>
-    <h2>Les Statistiques</h2>
-    <p>un tableau</p>
-    
+    <section class="container-fluid my-5">
+      <h2 class="sizeH2">Les Statistiques</h2>
+      <table>
+        <tr>
+            <th>Indicateur</th>
+            <th>Valeur</th>
+            <th>Variation</th>
+        </tr>
+          <tr>
+            <td class="indicateurs"></td>
+            <td class="value"></td>
+            <td class="variation"></td>
+        </tr>
+        <tr>
+            <td class="indicateurs"></td>
+            <td class="value"></td>
+            <td class="variation"></td>
+        </tr>
+        <tr>
+            <td class="indicateurs"></td>
+            <td class="value"></td>
+            <td class="variation"></td>
+        </tr>
+        <tr>
+          <td class="indicateurs"></td>
+          <td class="value"></td>
+          <td class="variation"></td>
+        </tr>
+      </table>
+    </section>
   </main>
 
   <footer class="container-fluid bgColor mb-0">
@@ -78,7 +102,6 @@
       <i class="fab fa-facebook-square"></i>
       <i class="fab fa-instagram-square"></i></p>
     </div>
-
     <div class="row">
       <p class="text-center">Mentions legales</p>
       <p class="text-center">Politiques de traitement des données</p>
@@ -86,14 +109,13 @@
       <p class="text-center sizeCopyRight">Copyright © avril-2021 </p>
     </div>
   </footer>
-    
-
+  
   <script src="https://kit.fontawesome.com/6e3dce75fc.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src=""></script>
+  <script src="js/stats.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

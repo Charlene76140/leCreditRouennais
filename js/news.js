@@ -10,7 +10,7 @@ function articles(){
                 //variable get the response from server
                 let data = JSON.parse(httpRequest.responseText);
                 console.log(data);
-                //loop over themeArticle length of data (server response).
+                //loop over Articles length of data (server response).
                 for(let i = 0; i < data.length; i++){
                     let section = document.querySelector('section');
                     section.innerHTML += '<div class="card text-center mt-5 sizeArticle"><div class="card-header">'+ data[i].id 
