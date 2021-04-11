@@ -87,6 +87,177 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  /*----------------------------general rules----------------------------------- */
+  *{
+    margin: 0;
+    padding: 0;
+  }  
+
+  body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .bgColor, .colorButton{
+    background-color: #829298;
+  }
+
+  /*----------For Layer----------*/
+  .layer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.794);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sizeRules{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+  }
+  /*------------------------------mobile version-----------------------------------*/
+
+  /*----------Header mobile---------*/
+  .onlyComputer{
+    display: none;
+  }
+  /*----------main mobile----------*/
+  hr{
+    display: none;
+  }
+
+  section h2{
+    margin: 2% 2%;
+  }
+
+  .sizeSection{
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+  }
+
+  table{
+    border-collapse: collapse;
+    width: 95%;
+    margin: 2%;
+    text-align: center;
+  }
+
+  td, th {
+    border: 1px solid black;
+  }
+
+  table th{
+    height: 5vh;
+    background-color:#829298;
+  }
+
+  .sizeH2{
+    margin-bottom: 20%;
+  }
+  /*---------Footer mobile----------*/
+  .sizeIcone{
+    font-size: 30px;
+  }
+
+  .sizeCopyRight{
+    font-size: 0.8em;
+  }
+
+  /*--------------------------------computer version--------------------------------- */
+  @media screen and (min-width : 768px){
+    /*--------Header computer--------*/
+    .onlyMobile{
+      display: none;
+    }
+
+    .onlyComputer{
+      display: block;
+    }
+
+    nav{
+      font-size: 1.2em;
+    }
+
+    /*----------main computer----------*/
+    article{
+      font-size: 0.9em;
+    }
+    
+    hr{
+      display: block;
+      width: 50%;
+      margin: 5% 25% 5% 25%;
+    }
+
+    section h2{
+      margin: 2% 2%;
+    }
+
+    .section2{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .sizeArticle{
+      width: 40%;
+      margin: 0 2% 0 2%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .sizeButton{
+      width: 35%;
+      margin: auto;
+    }
+
+    .sizeH2{
+      margin-bottom: 2%;
+    }
+
+    table{
+      border-collapse: collapse;
+      width: 70%;
+      margin: 5% 15%;
+      text-align: center;
+      height: 40vh;
+      font-size: 1.3em;
+    }
+  
+    td, th {
+      border: 1px solid black;
+    }
+  
+    table th{
+      height: 5vh;
+      background-color:#829298;
+    }
+
+    /*----------Footer computer----------*/
+    .sizeIcone{
+      font-size:50px;
+    }
+
+    footer p{
+      padding: 0.5px;
+    }
+  }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
